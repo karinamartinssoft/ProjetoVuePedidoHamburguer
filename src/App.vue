@@ -1,26 +1,25 @@
 <template>
- <NavBar :logo="logo_src" :alt="app_name" />
-  <RouterView/>
-  <Footer></Footer> 
+  <NavBar :logo="logo_src" :alt="app_name" />
+  <RouterView />
+  <Footer></Footer>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue';
-import Footer from './components/Footer.vue';
+import NavBar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   components: {
     NavBar,
-    Footer
+    Footer,
   },
-  data(){
+  data() {
     return {
       logo_src: "/img/logo.png",
-      app_name: "Crie seu Hamburguer"
-    }
-  }
-  
-}
+      app_name: "Crie seu Hamburguer",
+    };
+  },
+};
 </script>
 
 <style>
@@ -31,12 +30,12 @@ export default {
   box-sizing: border-box;
 }
 
-.main-container{
+.main-container {
   margin: 50px;
   min-height: 250px;
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 42px;
   color: #222;
